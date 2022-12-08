@@ -33,4 +33,12 @@
         <servlet-name>ResultsheetDesing</servlet-name>
         <url-pattern>/ResultsheetDesing</url-pattern>
     </servlet-mapping>
+    <servlet>
+        <servlet-name>RegistrationForm</servlet-name>
+        <jsp-file>/RegistrationForm.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>RegistrationForm</servlet-name>
+        <url-pattern>/RegistrationForm</url-pattern>
+    </servlet-mapping>
 </web-app>

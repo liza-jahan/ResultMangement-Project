@@ -9,6 +9,7 @@
 </h1>
 <br/>
 <a href="Resultsheet1.jsp">Result sheet</a>
-<a href="ResultsheetDesing.jsp">Mark table</a>
+<a href="ResultsheetDesing.jsp">Mark table</a><br>
+<a href="RegistrationForm.jsp">Registration</a>
 </body>
 </html>

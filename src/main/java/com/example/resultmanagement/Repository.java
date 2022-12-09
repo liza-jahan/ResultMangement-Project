@@ -21,7 +21,7 @@ public class Repository {
     private static final String COMPUTER = "computer";
     private String ID = "id";
 
-    public int saveDatabase(int roll,String name,int bangla,int english,int math,int science,int computer) {
+    public int saveDatabase(int roll, String name, int bangla, int english, int math, int science, int computer) {
 
         sqlConnect sqlConnect = new sqlConnect();
         Connection connection = sqlConnect.connection();

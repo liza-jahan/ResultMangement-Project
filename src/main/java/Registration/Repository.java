@@ -116,5 +116,25 @@ public class Repository {
 
         return bean;
     }
+    public boolean findUserByCredential (int RegistrationNumber , int password) {
+
+        sqlConnect sqlConnect = new sqlConnect();
+        Connection connection = sqlConnect.connection();
+        boolean exits = false;
+        PreparedStatement statement = null;
+        try {
+            statement = connection.prepareStatement("select registrationNumber from  registration_info   where registrationNumber=? and password=?");
+            statement.setInt(1, RegistrationNumber);
+            statement.setInt(2, password);
+
+            ResultSet resultSet = statement.executeQuery();
+            exits = resultSet.next();
+
+
+        } catch (Exception e) {
+            System.out.println(e);
+        }
+        return exits;
+    }
 
 }

@@ -15,15 +15,25 @@
 </head>
 <body>
 <%
- UserRegService userRegService = new UserRegServiceImp();
- int status = userRegService.save(userBean);
-  if(status==1)
+UserRegService userRegService = new UserRegServiceImp();
+int status = userRegService.save(userBean);
+if(status==1)
 {
+response.getWriter().print("<h2> Account Created </h2><a href=\"LogInPage\">Log in</a> ");
 
+}
+else if(status==-1)
+{
+response.getWriter().print("<h2> User All ready Registered </h2><a href=\"RegistrationForm\">Try again</a> ");
+
+}
+else
+{
+response.getWriter().print("<h2> User All ready Registered </h2><a href=\"RegistrationForm\">Try again</a> ");
 
 }
 
 %>
-  
-  </body>
+
+</body>
 </html>

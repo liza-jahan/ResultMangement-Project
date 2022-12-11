@@ -18,7 +18,7 @@ public class UserRegServiceImp implements UserRegService {
         return repository.saveUserInfo(userBean);
     }
     @Override
-    public boolean User_log_in(int registrationNumber ,int password)
+    public boolean User_log_in(int registrationNumber ,String password)
     {
         Repository repository =  new Repository();
         return   repository.findUserByCredential(registrationNumber,password);

@@ -24,7 +24,7 @@ public class Repository {
             statement = connection.prepareStatement("insert into registration_info(registrationNumber,classs,password,authority)" + "values (?,?,?,?)");
             statement.setInt(1, userBean.getRegistrationNumber());
             statement.setInt(2, userBean.getClasss());
-            statement.setInt(3, userBean.getPassword());
+            statement.setString(3, userBean.getPassword());
             statement.setString(4, userBean.getAuthority());
 
             return statement.executeUpdate();
@@ -74,7 +74,7 @@ public class Repository {
 
                 userBean.setRegistrationNumber(resultSet.getInt(REGISTRATION_NUMBER));
                 userBean.setClasss(resultSet.getInt(CLASS));
-                userBean.setPassword(resultSet.getInt(PASSWORD));
+                userBean.setPassword(resultSet.getString(PASSWORD));
                 userBean.setAuthority(resultSet.getString(AUTHORITY));
                 userBean.setId(resultSet.getInt(ID));
 
@@ -101,7 +101,7 @@ public class Repository {
                 UserBean userBean = new UserBean();
                 userBean.setRegistrationNumber(rs.getInt(REGISTRATION_NUMBER));
                 userBean.setClasss(rs.getInt(CLASS));
-                userBean.setPassword(rs.getInt(PASSWORD));
+                userBean.setPassword(rs.getString(PASSWORD));
                 userBean.setAuthority(rs.getString(AUTHORITY));
                 userBean.setId(rs.getInt(ID));
                 bean.add(userBean);
@@ -116,7 +116,7 @@ public class Repository {
 
         return bean;
     }
-    public boolean findUserByCredential (int RegistrationNumber , int password) {
+    public boolean findUserByCredential (int RegistrationNumber , String password) {
 
         sqlConnect sqlConnect = new sqlConnect();
         Connection connection = sqlConnect.connection();
@@ -125,7 +125,7 @@ public class Repository {
         try {
             statement = connection.prepareStatement("select registrationNumber from  registration_info   where registrationNumber=? and password=?");
             statement.setInt(1, RegistrationNumber);
-            statement.setInt(2, password);
+            statement.setString(2, password);
 
             ResultSet resultSet = statement.executeQuery();
             exits = resultSet.next();

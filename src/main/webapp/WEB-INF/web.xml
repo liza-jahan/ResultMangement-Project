@@ -41,4 +41,12 @@
         <servlet-name>RegistrationForm</servlet-name>
         <url-pattern>/RegistrationForm</url-pattern>
     </servlet-mapping>
+    <servlet>
+        <servlet-name>HomePage</servlet-name>
+        <jsp-file>/HomePage.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>HomePage</servlet-name>
+        <url-pattern>/HomePage</url-pattern>
+    </servlet-mapping>
 </web-app>

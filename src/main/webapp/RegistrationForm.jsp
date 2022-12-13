@@ -30,7 +30,7 @@
                         <div class="card-body p-5">
                             <h2 class="text-uppercase text-center mb-5">Create an account</h2>
 
-                            <form>
+                            <form action="RegistrationForm_process"method="post">
 
                                 <div class="form-outline mb-4">
                                     <label class="form-label" for="form3Example1cg">Registration Number</label>
@@ -69,9 +69,8 @@
                                 </div>
 
                                 <div class="d-flex justify-content-center">
-                                    <button type="button"
-                                            class="btn btn-success btn-block btn-lg gradient-custom-4 text-body">
-                                        Register
+                                    <button type="submit" class="btn btn-success btn-block btn-lg gradient-custom-4 text-body" >
+                                      <a href="LogInPage_process.jsp"> Register</a>
                                     </button>
                                 </div>
 

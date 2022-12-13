@@ -1,47 +1,32 @@
-<%@ page import="Service.UserRegService" %>
-<%@ page import="Service.UserRegServiceImp" %>
-<%@page import="Registration.UserBean" %><%--
+<%--
   Created by IntelliJ IDEA.
   User: HP
-  Date: 11/12/2022
-  Time: 12:05 AM
+  Date: 13/9/2022
+  Time: 5:02 PM
   To change this template use File | Settings | File Templates.
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
     <title>Title</title>
+    <link href="https://fonts.googleapis.com/css?family=ZCOOL+XiaoWei" rel="stylesheet">
+
+    <link rel="stylesheet" href="<%=request.getContextPath()%>/CSS/LogInPage_style.css">
+
 </head>
 <body>
-  <%
-  int Registration=Integer.parseInt(request.getParameter("registrationNumber"));
-  String password =request.getParameter("password");
-   UserRegService userService= new UserRegServiceImp();
-
-  boolean isUserLogIn=userService.User_log_in(Registration,password);
-  if(isUserLogIn)
-  {
-  UserBean userBean= userService.getUserByRegistration(Registration);
-  session.setAttribute("user_log_in_status","yes");
-  session.setAttribute("registrationNumber",userBean.getRegistrationNumber());
-  session.setAttribute("classs",userBean.getClass());
-  session.setAttribute("password",userBean.getPassword());
-  session.setAttribute("authority",userBean.getAuthority());
-  response.sendRedirect("Home");
 
 
+<form class="regbox" action="LogInPage_process" method="post">
+    <h2>Log In Page</h2>
+    <label>Registration no</label>
+    <input name="registration"  type="text"><br><br>
+    <label>Password</label><br>
+    <input name="password" type="password"><br><br>
+    <button class="blue"type="submit">Submit</button>
+    <button class="blue"><a href="RegistrationForm.jsp"> No Account ?</a></button>
 
-  }
-else{
-  response.sendRedirect("user_log_in?user_log_in_status=false");
+</form>
 
-
-  }
-
-
-
-
-
-  %>
-  </body>
+</body>
 </html>

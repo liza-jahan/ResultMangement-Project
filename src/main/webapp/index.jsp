@@ -11,6 +11,8 @@
 <a href="Resultsheet1.jsp">Result sheet</a>
 <a href="ResultsheetDesing.jsp">Mark table</a><br>
 <a href="RegistrationForm.jsp">Registration</a>
-<a href="HomePage.jsp">Registration</a>
+<a href="HomePage.jsp">Registration</a></br>
+<a href="LogInPage_process.jsp">log</a>
+
 </body>
 </html>

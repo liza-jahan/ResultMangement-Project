@@ -49,4 +49,29 @@
         <servlet-name>HomePage</servlet-name>
         <url-pattern>/HomePage</url-pattern>
     </servlet-mapping>
+    <servlet>
+        <servlet-name>RegistrationForm_process</servlet-name>
+        <jsp-file>/RegistrationForm_process.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>RegistrationForm_process</servlet-name>
+        <url-pattern>/RegistrationForm_process</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>LogInPage</servlet-name>
+        <jsp-file>/LogInPage.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>LogInPage</servlet-name>
+        <url-pattern>/LogInPage</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>LogInPage_process</servlet-name>
+        <jsp-file>/LogInPage_process.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>LogInPage_process</servlet-name>
+        <url-pattern>/LogInPage_process</url-pattern>
+    </servlet-mapping>
 </web-app>

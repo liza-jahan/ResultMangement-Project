@@ -1,5 +1,5 @@
-<%@ page import="Service.UserRegService" %>
-<%@ page import="Service.UserRegServiceImp" %><%--
+<%@ page import="com.example.resultmanagement.UserService.UserRegService" %>
+<%@ page import="com.example.resultmanagement.UserService.UserRegServiceImp" %><%--
   Created by IntelliJ IDEA.
   User: HP
   Date: 10/12/2022
@@ -7,7 +7,7 @@
   To change this template use File | Settings | File Templates.
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
-<jsp:useBean id="userBean" class="Registration.UserBean"></jsp:useBean>
+<jsp:useBean id="userBean" class="com.example.resultmanagement.UserModel.UserBean"></jsp:useBean>
 <jsp:setProperty property="*" name="userBean"></jsp:setProperty>
 <html>
 <head>

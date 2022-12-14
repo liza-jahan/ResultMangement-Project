@@ -1,4 +1,4 @@
-package Registration;
+package com.example.resultmanagement.UserModel;
 
 public class UserBean {
     private  int registrationNumber;

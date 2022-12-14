@@ -1,4 +1,4 @@
-<%@ page import="com.example.resultmanagement.Repository" %><%--
+<%@ page import="com.example.resultmanagement.ResultModel.Repository" %><%--
   Created by IntelliJ IDEA.
   User: HP
   Date: 6/12/2022

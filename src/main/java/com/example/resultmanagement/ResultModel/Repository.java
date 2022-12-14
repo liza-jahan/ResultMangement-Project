@@ -1,14 +1,12 @@
-package com.example.resultmanagement;
+package com.example.resultmanagement.ResultModel;
 
-import SqlConnect.sqlConnect;
+import com.example.resultmanagement.SqlConnect.sqlConnect;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.util.ArrayList;
 import java.util.List;
-
-import static java.sql.Connection.*;
 
 public class Repository {
     private static final String ROLL = "roll";

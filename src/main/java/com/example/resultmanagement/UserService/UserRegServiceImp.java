@@ -1,7 +1,7 @@
-package Service;
+package com.example.resultmanagement.UserService;
 
-import Registration.Repository;
-import Registration.UserBean;
+import com.example.resultmanagement.UserModel.Repository;
+import com.example.resultmanagement.UserModel.UserBean;
 
 import java.util.List;
 

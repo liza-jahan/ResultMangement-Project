@@ -1,4 +1,4 @@
-package SqlConnect;
+package com.example.resultmanagement.SqlConnect;
 
 import java.sql.Connection;
 import java.sql.DriverManager;

@@ -1,6 +1,6 @@
-<%@ page import="Service.UserRegService" %>
-<%@ page import="Service.UserRegServiceImp" %>
-<%@page import="Registration.UserBean" %><%--
+<%@ page import="com.example.resultmanagement.UserService.UserRegService" %>
+<%@ page import="com.example.resultmanagement.UserService.UserRegServiceImp" %>
+<%@page import="com.example.resultmanagement.UserModel.UserBean" %><%--
   Created by IntelliJ IDEA.
   User: HP
   Date: 11/12/2022

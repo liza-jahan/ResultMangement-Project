@@ -1,4 +1,4 @@
-package com.example.resultmanagement;
+package com.example.resultmanagement.ResultModel;
 
 public class ResultBean
 {

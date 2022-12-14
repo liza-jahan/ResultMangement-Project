@@ -19,7 +19,7 @@
 
 <form class="regbox" action="LogInPage_process" method="post">
     <h2>Log In Page</h2>
-    <label>Registration no</label>
+    <label>com.example.resultmanagement.UserModel no</label>
     <input name="registration"  type="text"><br><br>
     <label>Password</label><br>
     <input name="password" type="password"><br><br>

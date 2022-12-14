@@ -1,5 +1,5 @@
-<%@ page import="com.example.resultmanagement.ResultBean" %>
-<%@ page import="com.example.resultmanagement.Repository" %>
+<%@ page import="com.example.resultmanagement.ResultModel.ResultBean" %>
+<%@ page import="com.example.resultmanagement.ResultModel.Repository" %>
 <%@ page import="java.util.List" %>
 <%@ page import="java.util.Iterator" %>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>

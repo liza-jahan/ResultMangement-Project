@@ -1,6 +1,6 @@
-package Registration;
+package com.example.resultmanagement.UserModel;
 
-import SqlConnect.sqlConnect;
+import com.example.resultmanagement.SqlConnect.sqlConnect;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;

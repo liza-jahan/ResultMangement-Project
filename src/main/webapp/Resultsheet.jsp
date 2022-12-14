@@ -10,7 +10,7 @@
 <head>
     <title>Title</title>
     <link href="https://fonts.googleapis.com/css?family=ZCOOL+XiaoWei" rel="stylesheet">
-    <link rel="stylesheet" href="<%=request.getContextPath()%>/CSS/Resultsheet1_style.css">
+    <link rel="stylesheet" href="<%=request.getContextPath()%>/CSS/Resultsheet_style.css">
 </head>
 <body>
 <header id="hero">

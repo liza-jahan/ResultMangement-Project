@@ -10,7 +10,7 @@
 <head>
     <title>Title</title>
     <link href="https://fonts.googleapis.com/css?family=ZCOOL+XiaoWei" rel="stylesheet">
-    <link rel="stylesheet" href="<%=request.getContextPath()%>/CSS/Resultsheet_style.css">
+    <link rel="stylesheet" href="<%=request.getContextPath()%>/CSS/ResultSheet_style.css">
 </head>
 <body>
 <header id="hero">
@@ -18,7 +18,7 @@
         <div class="regbox box">
 
             <center><h3> Result sheet </h3></center>
-            <form action="Resultsheet1_process" method="post">
+            <form action="ResultSheet_process" method="post">
                 <p>Roll</p>
                 <input type="number" placeholder="Roll" name="roll" required>
 

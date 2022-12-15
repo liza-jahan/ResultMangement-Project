@@ -12,19 +12,19 @@
         <url-pattern>/index</url-pattern>
     </servlet-mapping>
     <servlet>
-        <servlet-name>Resultsheet</servlet-name>
-        <jsp-file>/Resultsheet1.jsp</jsp-file>
+        <servlet-name>ResultSheet</servlet-name>
+        <jsp-file>/ResultSheet.jsp</jsp-file>
     </servlet>   
     <servlet-mapping>
-        <servlet-name>Resultsheet</servlet-name>
-        <url-pattern>/Resultsheet</url-pattern>
+        <servlet-name>ResultSheet</servlet-name>
+        <url-pattern>/ResultSheet</url-pattern>
     </servlet-mapping> <servlet>
-        <servlet-name>Resultsheet1_process</servlet-name>
-        <jsp-file>/Resultsheet1_process.jsp</jsp-file>
+        <servlet-name>ResultSheet_process</servlet-name>
+        <jsp-file>/ResultSheet_process.jsp</jsp-file>
     </servlet>
     <servlet-mapping>
-        <servlet-name>Resultsheet1_process</servlet-name>
-        <url-pattern>/Resultsheet1_process</url-pattern>
+        <servlet-name>ResultSheet_process</servlet-name>
+        <url-pattern>/ResultSheet_process</url-pattern>
     </servlet-mapping> <servlet>
         <servlet-name>ResultsheetDesing</servlet-name>
         <jsp-file>/ResultsheetDesing.jsp</jsp-file>

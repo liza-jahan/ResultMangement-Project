@@ -33,7 +33,7 @@
                             <form action="RegistrationForm_process" method="post">
 
                                 <div class="form-outline mb-4">
-                                    <label class="form-label" for="form3Example1cg">com.example.resultmanagement.UserModel Number</label>
+                                    <label class="form-label" for="form3Example1cg">Registration Number</label>
 
                                     <input type="text" name="registrationNumber" id="form3Example1cg"
                                            class="form-control form-control-lg"/>

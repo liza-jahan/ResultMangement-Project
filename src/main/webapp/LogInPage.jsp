@@ -16,17 +16,26 @@
 </head>
 <body>
 
+<header id="hero">
+    <div class="container">
+        <div class="regbox box">
 
-<form class="regbox" action="LogInPage_process" method="post">
-    <h2>Log In Page</h2>
-    <label>com.example.resultmanagement.UserModel no</label>
-    <input name="registration"  type="text"><br><br>
-    <label>Password</label><br>
-    <input name="password" type="password"><br><br>
-    <button class="blue"type="submit">Submit</button>
-    <button class="blue"><a href="RegistrationForm.jsp"> No Account ?</a></button>
+            <center><h3> Log in page </h3></center>
+            <form action="LogInPage_process" method="post">
 
-</form>
 
+                <p>Registration Number</p>
+                <input type="text" placeholder="Registration"name="registrationNumber" required>
+                <p>Password</p>
+                <input type="password" placeholder="Password" name="password" required>
+
+                <br>
+                <input type="submit" value="Submit">
+                <button class="blue"><a href="RegistrationForm.jsp"> No Account ?</a></button>
+            </form>
+        </div>
+    </div>
+
+</header>
 </body>
 </html>

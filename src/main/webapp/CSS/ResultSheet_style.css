@@ -17,7 +17,7 @@ body {
 
 #hero {
     height: 100vh;
-    background: yellowgreen url(../img/ppp.jpg) no-repeat center top / cover;
+    background: yellowgreen url(../IMG/ppp.jpg) no-repeat center top / cover;
     overflow: hidden;
     position: relative;
 }
@@ -28,11 +28,11 @@ body {
 .box,
 .regbox {
     width: 320px;
-    height: 590px;
+    height: 600px;
     background: #2f3542;
     margin: 0;
     padding: 10px;
-    top: 55%;
+    top: 53%;
     left: 50%;
     color: #fff;
     border-radius: 15px;

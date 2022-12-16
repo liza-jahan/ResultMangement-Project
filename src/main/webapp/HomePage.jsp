@@ -529,6 +529,14 @@
 </head>
 
 <body>
+<%
+    String isUserLogin =(String) session.getAttribute("user_log_in_status");
+    if(isUserLogin==null || !isUserLogin.equals("yes"))
+    {
+      response.sendRedirect("/?Failed=ture") ;
+    }
+
+%>
 <div class="page-wrapper chiller-theme toggled">
     <a id="show-sidebar" class="btn btn-sm btn-dark" href="#">
         <i class="fas fa-bars"></i>

@@ -67,8 +67,8 @@ public class Repository {
         UserBean userBean = new UserBean();
         try {
             statement = connection.prepareStatement("select * from registration_info where registrationNumber=? ");
-            statement.executeUpdate();
-            ResultSet resultSet = null;
+
+            ResultSet resultSet = statement.executeQuery();
 
             while (resultSet.next()) {
 

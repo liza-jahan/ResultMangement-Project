@@ -72,7 +72,7 @@ public class Repository {
         return resultBeanList;
     }
 
-
+//Edit value
     public ResultBean getValueOfUser(int id) {
         sqlConnect sqlConnect = new sqlConnect();
         Connection connection = sqlConnect.connection();
@@ -97,14 +97,26 @@ public class Repository {
             e.printStackTrace();
         }
 
- return resultBean;
+        return resultBean;
     }
 
-    public void editValue(ResultBean resultBean)
-    {
-
-
-
+    public void editValue(ResultBean resultBean) {
+        sqlConnect sqlConnect = new sqlConnect();
+        Connection connection = sqlConnect.connection();
+        PreparedStatement statement = null;
+        try {
+            statement = connection.prepareStatement("UPDATE information SET roll=?,name =?,bangla=?,english=?,math=?,science=?,computer=? where id=?");
+            statement.setInt(1, resultBean.getRoll());
+            statement.setString(2, resultBean.getName());
+            statement.setInt(3, resultBean.getBangla());
+            statement.setInt(4, resultBean.getEnglish());
+            statement.setInt(5, resultBean.getMath());
+            statement.setInt(6, resultBean.getScience());
+            statement.setInt(7, resultBean.getComputer());
+            statement.executeUpdate();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
 
 
     }

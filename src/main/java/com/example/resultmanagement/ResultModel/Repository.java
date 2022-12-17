@@ -35,7 +35,7 @@ public class Repository {
             statement.setInt(7, computer);
             return statement.executeUpdate();
         } catch (Exception e) {
-            System.out.println(e);
+            e.printStackTrace();
         }
 
 
@@ -66,10 +66,23 @@ public class Repository {
             }
 
         } catch (Exception e) {
-            System.out.println(e);
-
+            e.printStackTrace();
 
         }
         return resultBeanList;
+    }
+
+
+    public int editValue(){
+        sqlConnect sqlConnect = new sqlConnect();
+        Connection connection = sqlConnect.connection();
+        PreparedStatement statement = null;
+        try {
+
+        }
+
+
+
+
     }
 }

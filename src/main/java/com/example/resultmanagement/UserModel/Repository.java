@@ -31,7 +31,7 @@ public class Repository {
 
 
         } catch (Exception e) {
-            System.out.println(e);
+            e.printStackTrace();
         }
 
 
@@ -54,7 +54,7 @@ public class Repository {
 
 
         } catch (Exception e) {
-            System.out.println(e);
+            e.printStackTrace();
         }
         return exits;
     }
@@ -81,7 +81,7 @@ public class Repository {
             }
 
         } catch (Exception e) {
-            System.out.println(e);
+            e.printStackTrace();
         }
         return userBean;
     }
@@ -103,14 +103,14 @@ public class Repository {
                 userBean.setClasss(rs.getInt(CLASS));
                 userBean.setPassword(rs.getString(PASSWORD));
                 userBean.setAuthority(rs.getString(AUTHORITY));
-             //   userBean.setId(rs.getInt(ID));
+                userBean.setId(rs.getInt(ID));
                 bean.add(userBean);
 
             }
 
 
         } catch (Exception e) {
-            System.out.println(e);
+            e.printStackTrace();
         }
 
 
@@ -132,7 +132,7 @@ public class Repository {
 
 
         } catch (Exception e) {
-            System.out.println(e);
+            e.printStackTrace();
         }
         return exits;
     }

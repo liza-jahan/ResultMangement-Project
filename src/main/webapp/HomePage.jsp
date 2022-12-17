@@ -575,17 +575,16 @@
                     <li class="sidebar-dropdown">
                         <a href="#">
                             <i class="fa fa-tachometer-alt"></i>
-                            <span>Class</span>
+                            <span>Result Information</span>
 
                         </a>
                         <div class="sidebar-submenu">
                             <ul>
                                 <li>
-                                    <a href="#">Class 6
+                                    <a href="ResultsheetDesing.jsp">Class 6
                                         <span class="badge badge-pill badge-success">Pro</span>
                                     </a>
-                                    <a href="Class_6_info.jsp">Student information</a>
-                                    <a href="AdminTask.jsp">Admin Task </a>
+
                                 </li>
                                 <li>
                                     <a href="#">Class 7</a>

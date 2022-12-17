@@ -103,7 +103,7 @@ public class Repository {
                 userBean.setClasss(rs.getInt(CLASS));
                 userBean.setPassword(rs.getString(PASSWORD));
                 userBean.setAuthority(rs.getString(AUTHORITY));
-                userBean.setId(rs.getInt(ID));
+             //   userBean.setId(rs.getInt(ID));
                 bean.add(userBean);
 
             }

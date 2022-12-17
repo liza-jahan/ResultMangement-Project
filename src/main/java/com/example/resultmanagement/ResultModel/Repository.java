@@ -73,13 +73,36 @@ public class Repository {
     }
 
 
-    public int editValue(){
+    public ResultBean getValueOfUser(int id) {
         sqlConnect sqlConnect = new sqlConnect();
         Connection connection = sqlConnect.connection();
         PreparedStatement statement = null;
+        ResultBean resultBean = new ResultBean();
         try {
+            statement = connection.prepareStatement("select * from information where id=?");
+            statement.setInt(1, id);
+            ResultSet resultSet = statement.executeQuery();
+            while (resultSet.next()) {
+                resultBean.setRoll(resultSet.getInt(ROLL));
+                resultBean.setName(resultSet.getString(NAME));
+                resultBean.setBangla(resultSet.getInt(BANGLA));
+                resultBean.setEnglish(resultSet.getInt(ENGLISH));
+                resultBean.setMath(resultSet.getInt(MATH));
+                resultBean.setScience(resultSet.getInt(SCIENCE));
+                resultBean.setComputer(resultSet.getInt(COMPUTER));
 
+            }
+
+        } catch (Exception e) {
+            e.printStackTrace();
         }
+
+ return resultBean;
+    }
+
+    public void editValue(ResultBean resultBean)
+    {
+
 
 
 

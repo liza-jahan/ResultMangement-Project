@@ -1,4 +1,4 @@
-<%@ page import="com.example.resultmanagement.ResultModel.Repository" %><%--
+<%@ page import="com.example.resultmanagement.ResultModel.RepositoryOfResult" %><%--
   Created by IntelliJ IDEA.
   User: HP
   Date: 6/12/2022
@@ -20,7 +20,7 @@
  int computer =Integer.parseInt(request.getParameter("computer"));
  int science =Integer.parseInt(request.getParameter("science"));
   //int id=Integer.parseInt(String.valueOf(session.getAttribute("id")));
-  Repository repository = new Repository();
+  RepositoryOfResult repository = new RepositoryOfResult();
   int status=repository.saveDatabase (roll,name,bangla,english,math,science,computer);
 
 %>

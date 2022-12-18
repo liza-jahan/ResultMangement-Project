@@ -14,18 +14,20 @@
     <servlet>
         <servlet-name>ResultSheet</servlet-name>
         <jsp-file>/ResultSheet.jsp</jsp-file>
-    </servlet>   
+    </servlet>
     <servlet-mapping>
         <servlet-name>ResultSheet</servlet-name>
         <url-pattern>/ResultSheet</url-pattern>
-    </servlet-mapping> <servlet>
+    </servlet-mapping>
+    <servlet>
         <servlet-name>ResultSheet_process</servlet-name>
         <jsp-file>/ResultSheet_process.jsp</jsp-file>
     </servlet>
     <servlet-mapping>
         <servlet-name>ResultSheet_process</servlet-name>
         <url-pattern>/ResultSheet_process</url-pattern>
-    </servlet-mapping> <servlet>
+    </servlet-mapping>
+    <servlet>
         <servlet-name>ResultsheetDesing</servlet-name>
         <jsp-file>/ResultsheetDesing.jsp</jsp-file>
     </servlet>
@@ -73,5 +75,21 @@
     <servlet-mapping>
         <servlet-name>LogInPage_process</servlet-name>
         <url-pattern>/LogInPage_process</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>editRegistrationForm</servlet-name>
+        <jsp-file>/editRegistrationForm.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>editRegistrationForm</servlet-name>
+        <url-pattern>/editRegistrationForm</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>editRegistrationForm_process</servlet-name>
+        <jsp-file>/editRegistrationForm_process.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>editRegistrationForm_process</servlet-name>
+        <url-pattern>/editRegistrationForm_process</url-pattern>
     </servlet-mapping>
 </web-app>

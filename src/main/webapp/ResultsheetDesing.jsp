@@ -1,5 +1,5 @@
 <%@ page import="com.example.resultmanagement.ResultModel.ResultBean" %>
-<%@ page import="com.example.resultmanagement.ResultModel.Repository" %>
+<%@ page import="com.example.resultmanagement.ResultModel.RepositoryOfResult" %>
 <%@ page import="java.util.List" %>
 <%@ page import="java.util.Iterator" %>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
@@ -22,7 +22,7 @@
 
 
 
-    Repository repository = new Repository();
+    RepositoryOfResult repository = new RepositoryOfResult();
     List<ResultBean> resultBean = repository.getAllInfo();
   //  ResultBean resultbean =new ResultBean();
     request.setAttribute("resultBean",resultBean);
@@ -43,6 +43,7 @@
             <th>Science</th>
             <th>Computer Science</th>
             <th>Total</th>
+            <th>Edit</th>
 
         <tr>
         </thead>
@@ -59,6 +60,9 @@
             <td><c:out value="${result.getScience()}"/></td>
             <td><c:out value="${result.getComputer()}"/></td>
             <td><c:out value="${result.getEnglish()+result.getBangla()+result.getMath()+result.getScience()+result.getComputer()}"/></td>
+                <td>
+                    <a href="editRegistrationForm.jsp?Id=<c:out value="${result.getId()}"/>" style="color: blueviolet">Edit</a>
+                </td>
 
 
             </c:forEach>

@@ -8,7 +8,7 @@ import java.sql.ResultSet;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Repository {
+public class RepositoryOfResult {
     private static final String ROLL = "roll";
     private static final String NAME = "name";
     private static final String BANGLA = "bangla";
@@ -73,7 +73,7 @@ public class Repository {
     }
 
 //Edit value
-    public ResultBean getValueOfUser(int id) {
+    public ResultBean getValueOfResult(int id) {
         sqlConnect sqlConnect = new sqlConnect();
         Connection connection = sqlConnect.connection();
         PreparedStatement statement = null;

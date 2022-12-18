@@ -13,6 +13,7 @@
 <a href="RegistrationForm.jsp">Registration</a>
 <a href="HomePage.jsp">Home page</a></br>
 <a href="LogInPage.jsp">log</a>
+<a href="editRegistrationForm.jsp">edit</a>
 
 </body>
 </html>

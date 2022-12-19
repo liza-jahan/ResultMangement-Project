@@ -62,11 +62,12 @@ public class Repository {
     public UserBean findUserByRegistration(int RegistrationNumber) {
         sqlConnect sqlConnect = new sqlConnect();
         Connection connection = sqlConnect.connection();
-        boolean exits = false;
+      //  boolean exits = false;
         PreparedStatement statement = null;
         UserBean userBean = new UserBean();
         try {
             statement = connection.prepareStatement("select * from registration_info where registrationNumber=? ");
+            statement.setInt(1,RegistrationNumber);
 
             ResultSet resultSet = statement.executeQuery();
 
@@ -92,6 +93,8 @@ public class Repository {
         sqlConnect sqlConnect = new sqlConnect();
         Connection connection = sqlConnect.connection();
         PreparedStatement statement = null;
+        boolean exitStatement = false;
+
         List<UserBean> bean = new ArrayList<>();
         try {
             statement = connection.prepareStatement("select * from registration_info");

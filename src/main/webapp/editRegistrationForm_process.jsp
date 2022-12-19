@@ -20,6 +20,7 @@
   int math =Integer.parseInt(request.getParameter("math"));
   int computer =Integer.parseInt(request.getParameter("computer"));
   int science =Integer.parseInt(request.getParameter("science"));
+  int id =Integer.parseInt(request.getParameter("id"));
 
   ResultBean resultBean =new ResultBean();
   resultBean.setRoll(roll);
@@ -29,10 +30,12 @@
   resultBean.setMath(math);
   resultBean.setScience(science);
   resultBean.setComputer(computer);
+  resultBean.setId(id);
+
 
   RepositoryOfResult repository=new RepositoryOfResult() ;
   repository.editValue(resultBean);
-  response.sendRedirect("HomePage");
+  response.sendRedirect("index");
 
   %>
   </body>

@@ -27,6 +27,7 @@
   session.setAttribute("classs",userBean.getClass());
   session.setAttribute("password",userBean.getPassword());
   session.setAttribute("authority",userBean.getAuthority());
+  session.setAttribute("Id",userBean.getId());
   response.sendRedirect("HomePage");
 
 

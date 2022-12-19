@@ -22,7 +22,16 @@
   //int id=Integer.parseInt(String.valueOf(session.getAttribute("id")));
   RepositoryOfResult repository = new RepositoryOfResult();
   int status=repository.saveDatabase (roll,name,bangla,english,math,science,computer);
+  if(status>0)
+  {
+      response.sendRedirect("index");
 
+  }
+  else
+  {
+
+  System.out.println("Registration failed");
+  }
 %>
   </body>
 </html>

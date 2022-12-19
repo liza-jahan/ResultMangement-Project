@@ -14,13 +14,7 @@
     <link rel="stylesheet" href="<%=request.getContextPath()%>/CSS/ResultSheet_style.css">
 </head>
 <body>
-<%
-    int id = Integer.parseInt(request.getParameter("id"));
-   RepositoryOfResult repository = new RepositoryOfResult();
-    ResultBean resultBean = repository.getValueOfResult(id);
-    request.setAttribute("resultBean", resultBean);
 
-%>
 <header id="hero">
     <div class="container" >
         <div class="regbox box">

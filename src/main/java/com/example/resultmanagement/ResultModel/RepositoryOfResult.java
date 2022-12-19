@@ -58,9 +58,9 @@ public class RepositoryOfResult {
                 resultBean.setEnglish(resultSet.getInt(ENGLISH));
                 resultBean.setMath(resultSet.getInt(MATH));
                 resultBean.setScience(resultSet.getInt(SCIENCE));
-
                 resultBean.setComputer(resultSet.getInt(COMPUTER));
                 resultBean.setId(resultSet.getInt(ID));
+
                 resultBeanList.add(resultBean);
 
             }
@@ -73,14 +73,14 @@ public class RepositoryOfResult {
     }
 
 //Edit value
-    public ResultBean getValueOfResult(int id) {
+    public ResultBean getValueOfResult(int Id) {
         sqlConnect sqlConnect = new sqlConnect();
         Connection connection = sqlConnect.connection();
         PreparedStatement statement = null;
         ResultBean resultBean = new ResultBean();
         try {
             statement = connection.prepareStatement("select * from information where id=?");
-            statement.setInt(1, id);
+            statement.setInt(1, Id);
             ResultSet resultSet = statement.executeQuery();
             while (resultSet.next()) {
                 resultBean.setRoll(resultSet.getInt(ROLL));

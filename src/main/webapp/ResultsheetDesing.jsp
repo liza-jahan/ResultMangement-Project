@@ -21,12 +21,16 @@
 <%
 
 
+int Id = Integer.parseInt(request.getParameter("id"));
+RepositoryOfResult repository = new RepositoryOfResult();
+ResultBean resultBean = repository.getValueOfResult(Id);
+request.setAttribute("resultBean", resultBean);
 
-    RepositoryOfResult repository = new RepositoryOfResult();
-    List<ResultBean> resultBean = repository.getAllInfo();
-  //  ResultBean resultbean =new ResultBean();
-    request.setAttribute("resultBean",resultBean);
-    //Iterator<ResultBean>it_list=resultBean.iterator();
+
+
+ //   RepositoryOfResult repository = new RepositoryOfResult();
+ //   List<ResultBean> resultBean = repository.getAllInfo();
+ //   request.setAttribute("resultBean",resultBean);
 
 %>
 <div class="container">

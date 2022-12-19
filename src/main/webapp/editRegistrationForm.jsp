@@ -31,17 +31,17 @@
             <p>Roll</p>
             <input type="text" placeholder="Roll" name="roll" value="<%=resultBean.getRoll()%>" required>
             <p>Name</p>
-            <input type="text" placeholder="Name" name="name" value="<%=resultBean.getName()%>" >
+            <input type="text" placeholder="Name" name="name" value="<%=resultBean.getName()%>"required >
             <p>Bangla</p>
-            <input type="text" placeholder="Bangla" name="bangla"value="<%=resultBean.getBangla()%>">
+            <input type="text" placeholder="Bangla" name="bangla"value="<%=resultBean.getBangla()%>"required>
             <p>English</p>
-            <input type="text" placeholder="English" name="english"value="<%=resultBean.getEnglish()%>">
+            <input type="text" placeholder="English" name="english"value="<%=resultBean.getEnglish()%>" required>
             <p>Math</p>
             <input type="text" placeholder="Math" name="math" value="<%=resultBean.getMath()%>"required>
             <p>Science</p>
             <input type="text" placeholder="Science" name="science" value="<%=resultBean.getScience()%>"required>
             <p>Computer </p>
-            <input type="text" placeholder="Computer" name="computer" value="<%=resultBean.getScience()%>"required><br>
+            <input type="text" placeholder="Computer" name="computer" value="<%=resultBean.getComputer()%>"required><br>
             <input type="submit" value="Register">
 
         </form>

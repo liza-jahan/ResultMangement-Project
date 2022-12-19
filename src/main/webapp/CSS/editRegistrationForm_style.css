@@ -17,7 +17,7 @@ body {
 
 #hero {
     height: 100vh;
-    background: yellowgreen no-repeat center top / cover;
+    background: yellowgreen url(../IMG/magazine-806073_640.jpg) no-repeat center top / cover;
     overflow: hidden;
     position: relative;
 }

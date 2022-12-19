@@ -20,22 +20,20 @@
 <body>
 <%
 
+    //getLogInUserAuthority
 
-int Id = Integer.parseInt(request.getParameter("id"));
-RepositoryOfResult repository = new RepositoryOfResult();
-ResultBean resultBean = repository.getValueOfResult(Id);
-request.setAttribute("resultBean", resultBean);
+    request.setAttribute("currentUserAuthority", session.getAttribute("authority"));
 
 
-
- //   RepositoryOfResult repository = new RepositoryOfResult();
- //   List<ResultBean> resultBean = repository.getAllInfo();
- //   request.setAttribute("resultBean",resultBean);
+    RepositoryOfResult repository = new RepositoryOfResult();
+    List<ResultBean> resultBean = repository.getAllInfo();
+    //  ResultBean resultbean =new ResultBean();
+    request.setAttribute("resultBean", resultBean);
 
 %>
 <div class="container">
     <h2>MARKS SHEET</h2>
-    <table>
+    <table style="border-collapse: collapse">
 
         <thead>
         <tr>
@@ -55,18 +53,25 @@ request.setAttribute("resultBean", resultBean);
         <tr>
 
 
-            <c:forEach var = "result" items="${resultBean}">
-            <td><c:out value="${result.getRoll()}"/></td>
-            <td><c:out value="${result.getName()}"/></td>
-            <td><c:out value="${result.getBangla()}"/></td>
-            <td><c:out value="${result.getEnglish()}"/></td>
-            <td><c:out value="${result.getMath()}"/></td>
-            <td><c:out value="${result.getScience()}"/></td>
-            <td><c:out value="${result.getComputer()}"/></td>
-            <td><c:out value="${result.getEnglish()+result.getBangla()+result.getMath()+result.getScience()+result.getComputer()}"/></td>
-                <td>
-                    <a href="editRegistrationForm.jsp?Id=<c:out value="${result.getId()}"/>" style="color: blueviolet">Edit</a>
-                </td>
+            <c:forEach var="result" items="${resultBean}">
+                <td><c:out value="${result.getRoll()}"/></td>
+                <td><c:out value="${result.getName()}"/></td>
+                <td><c:out value="${result.getBangla()}"/></td>
+                <td><c:out value="${result.getEnglish()}"/></td>
+                <td><c:out value="${result.getMath()}"/></td>
+                <td><c:out value="${result.getScience()}"/></td>
+                <td><c:out value="${result.getComputer()}"/></td>
+                <td><c:out
+                        value="${result.getEnglish()+result.getBangla()+result.getMath()+result.getScience()+result.getComputer()}"/></td>
+
+
+                <%--  if current User Authority    is admin then we will show the edit button              --%>
+                <c:if test="${currentUserAuthority eq 'Admin'}">
+                    <td>
+                        <a href="editRegistrationForm.jsp?id=<c:out value="${result.getId()}"/>"
+                           style="color: blueviolet">Edit</a>
+                    </td>
+                </c:if>
 
 
             </c:forEach>

@@ -90,6 +90,7 @@ public class RepositoryOfResult {
                 resultBean.setMath(resultSet.getInt(MATH));
                 resultBean.setScience(resultSet.getInt(SCIENCE));
                 resultBean.setComputer(resultSet.getInt(COMPUTER));
+            //   resultBean.setId(resultSet.getInt(ID));
 
             }
 
@@ -113,6 +114,7 @@ public class RepositoryOfResult {
             statement.setInt(5, resultBean.getMath());
             statement.setInt(6, resultBean.getScience());
             statement.setInt(7, resultBean.getComputer());
+        //    statement.setInt(8,resultBean.getId());
             statement.executeUpdate();
         } catch (Exception e) {
             e.printStackTrace();

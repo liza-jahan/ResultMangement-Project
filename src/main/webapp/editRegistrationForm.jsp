@@ -29,19 +29,19 @@
             <input type="hidden" placeholder="Id" name="id" value="<%=id%>" required>
 
             <p>Roll</p>
-            <input type="text" placeholder="Roll" name="roll" value="<%=resultBean.getRoll()%>" required>
+            <input type="text" placeholder="Roll" name="roll" value="<%=resultBean.getRoll()%>" >
             <p>Name</p>
-            <input type="text" placeholder="Name" name="name" value="<%=resultBean.getName()%>"required >
+            <input type="text" placeholder="Name" name="name" value="<%=resultBean.getName()%>" >
             <p>Bangla</p>
-            <input type="text" placeholder="Bangla" name="bangla"value="<%=resultBean.getBangla()%>"required>
+            <input type="text" placeholder="Bangla" name="bangla"value="<%=resultBean.getBangla()%>">
             <p>English</p>
-            <input type="text" placeholder="English" name="english"value="<%=resultBean.getEnglish()%>" required>
+            <input type="text" placeholder="English" name="english"value="<%=resultBean.getEnglish()%>" >
             <p>Math</p>
-            <input type="text" placeholder="Math" name="math" value="<%=resultBean.getMath()%>"required>
+            <input type="text" placeholder="Math" name="math" value="<%=resultBean.getMath()%>">
             <p>Science</p>
-            <input type="text" placeholder="Science" name="science" value="<%=resultBean.getScience()%>"required>
+            <input type="text" placeholder="Science" name="science" value="<%=resultBean.getScience()%>">
             <p>Computer </p>
-            <input type="text" placeholder="Computer" name="computer" value="<%=resultBean.getComputer()%>"required><br>
+            <input type="text" placeholder="Computer" name="computer" value="<%=resultBean.getComputer()%>"><br>
             <input type="submit" value="Register">
 
         </form>

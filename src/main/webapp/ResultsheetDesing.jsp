@@ -45,7 +45,10 @@
             <th>Science</th>
             <th>Computer Science</th>
             <th>Total</th>
+            <c:if test="${currentUserAuthority eq 'Admin'}">
+
             <th>Edit</th>
+            </c:if>
 
         <tr>
         </thead>

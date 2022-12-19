@@ -114,7 +114,7 @@ public class RepositoryOfResult {
             statement.setInt(5, resultBean.getMath());
             statement.setInt(6, resultBean.getScience());
             statement.setInt(7, resultBean.getComputer());
-        //    statement.setInt(8,resultBean.getId());
+           statement.setInt(8,resultBean.getId());
             statement.executeUpdate();
         } catch (Exception e) {
             e.printStackTrace();

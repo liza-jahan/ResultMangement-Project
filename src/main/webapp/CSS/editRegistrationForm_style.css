@@ -17,7 +17,7 @@ body {
 
 #hero {
     height: 100vh;
-    background: yellowgreen url(../img/images.jfif) no-repeat center top / cover;
+    background: yellowgreen no-repeat center top / cover;
     overflow: hidden;
     position: relative;
 }
@@ -32,7 +32,7 @@ body {
     background: #2f3542;
     margin: 0;
     padding: 10px;
-    top: 55%;
+    top: 54%;
     left: 50%;
     color: #fff;
     border-radius: 15px;
@@ -143,10 +143,10 @@ body {
 }
 
 .regbox h1 {
-    margin-top: 30px;
-    padding: 20px 0;
+    margin-top: 10px;
+    padding: 10px 0;
     text-align: center;
-    font-size: 25px;
+    font-size: 23px;
 }
 
 .regbox p {

@@ -92,6 +92,24 @@
         <servlet-name>editRegistrationForm_process</servlet-name>
         <url-pattern>/editRegistrationForm_process</url-pattern>
     </servlet-mapping>
+    <servlet>
+        <servlet-name>LogOut</servlet-name>
+        <jsp-file>/LogOut.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>LogOut</servlet-name>
+        <url-pattern>/LogOut</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>LogOutProcess</servlet-name>
+        <jsp-file>/LogOutProcess.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>LogOutProcess</servlet-name>
+        <url-pattern>/LogOutProcess</url-pattern>
+    </servlet-mapping>
+
+
     <error-page>
         <error-code>404</error-code>
         <location>/index.jsp</location>

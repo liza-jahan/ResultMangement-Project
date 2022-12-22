@@ -13,19 +13,21 @@
 <%--<a href="ResultsheetDesing.jsp">Mark table</a><br>--%>
 <%--<a href="RegistrationForm.jsp">Registration</a>--%>
 <%--<a href="HomePage.jsp">Home page</a></br>--%>
-<%--<a href="LogInPage.jsp">log</a>--%>
+<a href="LogInPage.jsp">log</a>
 <%--<a href="editRegistrationForm.jsp">edit</a>--%>
 <nav class="navbar background">
     <ul class="nav-list">
         <div class="logo"><img src=""></div>
         <li><a href="#Home">Home</a></li>
-        <li><a href="#Food">Food</a></li>
+
         <li><a href="#AboutUs">AboutUs</a></li>
         <li><a href="#ContactUs">Contact Us</a></li>
     </ul>
     <div class="rightNav">
-        <input type="text" name="search" id="search">
-        <button class="btn btn-sm">Search</button>
+<%--        <input type="text" name="search" id="search">--%>
+<%--        <button class="btn btn-sm">Search</button>--%>
+    <a href="#AboutUs">sing up</a>
+
     </div>
 </nav>
 <section class="background firstsection">

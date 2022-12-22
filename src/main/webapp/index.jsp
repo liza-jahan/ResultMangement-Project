@@ -13,7 +13,7 @@
 <%--<a href="ResultsheetDesing.jsp">Mark table</a><br>--%>
 <%--<a href="RegistrationForm.jsp">Registration</a>--%>
 <%--<a href="HomePage.jsp">Home page</a></br>--%>
-<a href="LogInPage.jsp">log</a>
+<%--<a href="LogInPage.jsp">log</a>--%>
 <%--<a href="editRegistrationForm.jsp">edit</a>--%>
 <nav class="navbar background">
     <ul class="nav-list">
@@ -24,9 +24,10 @@
         <li><a href="#ContactUs">Contact Us</a></li>
     </ul>
     <div class="rightNav">
-<%--        <input type="text" name="search" id="search">--%>
-<%--        <button class="btn btn-sm">Search</button>--%>
-    <a href="#AboutUs">sing up</a>
+
+    <a href="RegistrationForm.jsp">sing up</a><br>
+    <a href="LogInPage.jsp">sing in</a>
+
 
     </div>
 </nav>
@@ -36,14 +37,12 @@
             <p class="text-big">About US</p>
 
             <p class="text-small">
-                Here you will get to know the team
-                members of our company
+                Here you will get to know the result of ABC school students.
             </p>
             <br>
             <p class="center"><a href="#Order"
                                  style="text-decoration:none;color:white;">
-                Below are the people who
-                works in our company</a>
+                Every student can show his marks for each subject  of the exam.</a>
             </p>
         </div>
     </div>

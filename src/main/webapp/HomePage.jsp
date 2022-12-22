@@ -1,4 +1,3 @@
-
 <%@ page import="java.util.List" %>
 <%--
   Created by IntelliJ IDEA.
@@ -530,246 +529,248 @@
 
 <body>
 <%
-    String isUserLogin =(String) session.getAttribute("user_log_in_status");
-    if(isUserLogin==null || !isUserLogin.equals("yes"))
-    {
-      response.sendRedirect("/?Failed=ture") ;
+    String isUserLogin = (String) session.getAttribute("user_log_in_status");
+    if (isUserLogin == null || !isUserLogin.equals("yes")) {
+        response.sendRedirect("/?Failed=ture");
     }
+    request.setAttribute("currentUserAuthority", session.getAttribute("authority"));
 
 %>
 <div class="page-wrapper chiller-theme toggled">
-    <a id="show-sidebar" class="btn btn-sm btn-dark" href="#">
-        <i class="fas fa-bars"></i>
-    </a>
-    <nav id="sidebar" class="sidebar-wrapper">
-        <div class="sidebar-content">
-            <div class="sidebar-brand">
-                <a href="#">pro sidebar</a>
-                <div id="close-sidebar">
-                    <i class="fas fa-times"></i>
-                </div>
-            </div>
-            <div class="sidebar-header">
-                <div class="user-pic">
-                    <img class="img-responsive"
-                         src="<%=request.getContextPath()%>/Img/download.jpg"alt="User picture">
-                </div>
-                <div class="user-info">
+<a id="show-sidebar" class="btn btn-sm btn-dark" href="#">
+    <i class="fas fa-bars"></i>
+</a>
+<nav id="sidebar" class="sidebar-wrapper">
+<div class="sidebar-content">
+<div class="sidebar-brand">
+    <a href="#">pro sidebar</a>
+    <div id="close-sidebar">
+        <i class="fas fa-times"></i>
+    </div>
+</div>
+<div class="sidebar-header">
+    <div class="user-pic">
+        <img class="img-responsive"
+             src="<%=request.getContextPath()%>/Img/download.jpg" alt="User picture">
+    </div>
+    <div class="user-info">
           <span class="user-name">Jhon
             <strong>Smith</strong>
           </span>
-                    <span class="user-role">Administrator</span>
-                    <span class="user-status">
+        <span class="user-role">Administrator</span>
+        <span class="user-status">
             <i class="fa fa-circle"></i>
             <span>Online</span>
           </span>
-                </div>
-            </div>
+    </div>
+</div>
 
 
-            <div class="sidebar-menu">
-                <ul>
-                    <li class="header-menu">
-                        <span>General</span>
-                    </li>
-                    <li class="sidebar-dropdown">
-                        <a href="#">
-                            <i class="fa fa-tachometer-alt"></i>
-                            <span>Result Information</span>
+<div class="sidebar-menu">
+<ul>
+<li class="header-menu">
+    <span>General</span>
+</li>
+<li class="sidebar-dropdown">
+    <a href="#">
+        <i class="fa fa-tachometer-alt"></i>
+        <span>Result Information</span>
 
-                        </a>
-                        <div class="sidebar-submenu">
-                            <ul>
-                                <li>
-                                    <a href="ResultsheetDesing.jsp">Class 6
-                                        <span class="badge badge-pill badge-success">Pro</span>
-                                    </a>
+    </a>
+    <div class="sidebar-submenu">
+        <ul>
+            <li>
+                <a href="ResultsheetDesing.jsp">Class 6
+                    <span class="badge badge-pill badge-success">Pro</span>
+                </a>
 
-                                </li>
-                                <li>
-                                    <a href="#">Class 7</a>
-                                </li>
-                                <li>
-                                    <a href="#">Class 8</a>
-                                </li><li>
-                                <a href="#">Class 9</a>
-                            </li><li>
-                                <a href="#">Class 10</a>
-                            </li>
-                            </ul>
-                        </div>
-                    </li>
-                    <li class="sidebar-dropdown">
-                        <a href="#">
-                            <i class="fa fa-shopping-cart"></i>
-                            <span>Teacher</span>
-                            <span class="badge badge-pill badge-danger"></span>
-                        </a>
-                        <div class="sidebar-submenu">
-                            <ul>
-                                <li>
-                                    <a href="#">Teacher info
+            </li>
+            <li>
+                <a href="#">Class 7</a>
+            </li>
+            <li>
+                <a href="#">Class 8</a>
+            </li>
+            <li>
+                <a href="#">Class 9</a>
+            </li>
+            <li>
+                <a href="#">Class 10</a>
+            </li>
+        </ul>
+    </div>
+</li>
+<li class="sidebar-dropdown">
+    <a href="#">
+        <i class="fa fa-shopping-cart"></i>
+        <span>Teacher</span>
+        <span class="badge badge-pill badge-danger"></span>
+    </a>
+    <div class="sidebar-submenu">
+        <ul>
+            <li>
+                <a href="#">Teacher info
 
-                                    </a>
-                                </li>
+                </a>
+            </li>
 
-                            </ul>
-                        </div>
-                    </li>
-                    <li class="sidebar-dropdown">
-                        <a href="#">
-                            <i class="far fa-gem"></i>
-                            <span>other employee</span>
-                        </a>
-                        <div class="sidebar-submenu">
-                            <ul>
-                                <li>
-                                    <a href="#">General</a>
-                                </li>
-                                <li>
-                                    <a href="#">Panels</a>
-                                </li>
-                                <li>
-                                    <a href="#">Tables</a>
-                                </li>
-                                <li>
-                                    <a href="#">Icons</a>
-                                </li>
-                                <li>
-                                    <a href="#">Forms</a>
-                                </li>
-                            </ul>
-                        </div>
-                    </li>
+        </ul>
+    </div>
+</li>
+<li class="sidebar-dropdown">
+    <a href="#">
+        <i class="far fa-gem"></i>
+        <span>other employee</span>
+    </a>
+    <div class="sidebar-submenu">
+        <ul>
+            <li>
+                <a href="#">General</a>
+            </li>
+            <li>
+                <a href="#">Panels</a>
+            </li>
+            <li>
+                <a href="#">Tables</a>
+            </li>
+            <li>
+                <a href="#">Icons</a>
+            </li>
+            <li>
+                <a href="#">Forms</a>
+            </li>
+        </ul>
+    </div>
+</li>
 
-                    <li class="sidebar-dropdown">
-                        <a href="#">
-                            <i class="fa fa-globe"></i>
-                            <span>Maps</span>
-                        </a>
-                        <div class="sidebar-submenu">
-                            <ul>
-                                <li>
-                                    <a href="#">Google maps</a>
-                                </li>
-                                <li>
-                                    <a href="#">Open street map</a>
-                                </li>
-                            </ul>
-                        </div>
-                    </li>
-                    <li class="header-menu">
-                        <span>Extra</span>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <i class="fa fa-book"></i>
-                            <span>Documentation</span>
-                            <span class="badge badge-pill badge-primary">Beta</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <i class="fa fa-calendar"></i>
-                            <span>Calendar</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="LogOut.jsp">
-                            <i class="fa fa-folder"></i>
-                            <span >Log Out</span>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-            <!-- sidebar-menu  -->
-        </div>
-        <!-- sidebar-content  -->
-        <div class="sidebar-footer">
-            <a href="#">
-                <i class="fa fa-bell"></i>
-                <span class="badge badge-pill badge-warning notification">3</span>
-            </a>
-            <a href="#">
-                <i class="fa fa-envelope"></i>
-                <span class="badge badge-pill badge-success notification">7</span>
-            </a>
-            <a href="#">
-                <i class="fa fa-cog"></i>
-                <span class="badge-sonar"></span>
-            </a>
-            <a href="#">
-                <i class="fa fa-power-off"></i>
-            </a>
-        </div>
+<li class="sidebar-dropdown">
+    <a href="#">
+        <i class="fa fa-globe"></i>
+        <span>Maps</span>
+    </a>
+    <div class="sidebar-submenu">
+        <ul>
+            <li>
+                <a href="#">Google maps</a>
+            </li>
+            <li>
+                <a href="#">Open street map</a>
+            </li>
+        </ul>
+    </div>
+</li>
+<li class="header-menu">
+    <span>Extra</span>
+</li>
+<li>
+    <a href="#">
+        <i class="fa fa-book"></i>
+        <span>Documentation</span>
+        <span class="badge badge-pill badge-primary">Beta</span>
+    </a>
+</li>
+<c:if test="${currentUserAuthority eq 'Admin'}">
+    <li>
+    <a href="ResultSheet.jsp">
+    <i class="fa fa-calendar"></i>
+    <span> Result addition</span>
+    </a>
+    </li>
+</c:if>
+    <li>
+    <a href="LogOut.jsp">
+    <i class="fa fa-folder"></i>
+    <span >Log Out</span>
+    </a>
+    </li>
+    </ul>
+    </div>
+    <!-- sidebar-menu -->
+    </div>
+    <!-- sidebar-content -->
+    <div class="sidebar-footer">
+    <a href="#">
+    <i class="fa fa-bell"></i>
+    <span class="badge badge-pill badge-warning notification">3</span>
+    </a>
+    <a href="#">
+    <i class="fa fa-envelope"></i>
+    <span class="badge badge-pill badge-success notification">7</span>
+    </a>
+    <a href="#">
+    <i class="fa fa-cog"></i>
+    <span class="badge-sonar"></span>
+    </a>
+    <a href="#">
+    <i class="fa fa-power-off"></i>
+    </a>
+    </div>
     </nav>
-    <!-- sidebar-wrapper  -->
+    <!-- sidebar-wrapper -->
     <main class="page-content">
-        <div class="container-fluid">
-            <h2>Pro Sidebar</h2>
-            <hr>
+    <div class="container-fluid">
+    <h2>Pro Sidebar</h2>
+    <hr>
 
-                <div class="form-group col-md-12">
-                    <iframe src="https://ghbtns.com/github-btn.html?user=azouaoui-med&repo=pro-sidebar-template&type=star&count=true&size=large"
-                            frameborder="0" scrolling="0" width="140px" height="30px"></iframe>
-                    <iframe src="https://ghbtns.com/github-btn.html?user=azouaoui-med&repo=pro-sidebar-template&type=fork&count=true&size=large"
-                            frameborder="0" scrolling="0" width="140px" height="30px"></iframe>
-                </div>
-            </div>
-            <h5>More templates</h5>
-            <hr>
-
-
+    <div class="form-group col-md-12">
+    <iframe src="https://ghbtns.com/github-btn.html?user=azouaoui-med&repo=pro-sidebar-template&type=star&count=true&size=large"
+    frameborder="0" scrolling="0" width="140px" height="30px"></iframe>
+    <iframe src="https://ghbtns.com/github-btn.html?user=azouaoui-med&repo=pro-sidebar-template&type=fork&count=true&size=large"
+    frameborder="0" scrolling="0" width="140px" height="30px"></iframe>
+    </div>
+    </div>
+    <h5>More templates</h5>
+    <hr>
 
 
     </main>
     <!-- page-content" -->
-</div>
-<!-- page-wrapper -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
-        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-        crossorigin="anonymous"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
-        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-        crossorigin="anonymous"></script>
+    </div>
+    <!-- page-wrapper -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
 
-<script>
+    <script>
     jQuery(function ($) {
 
-        $(".sidebar-dropdown > a").click(function () {
-            $(".sidebar-submenu").slideUp(200);
-            if (
-                $(this)
-                    .parent()
-                    .hasClass("active")
-            ) {
-                $(".sidebar-dropdown").removeClass("active");
-                $(this)
-                    .parent()
-                    .removeClass("active");
-            } else {
-                $(".sidebar-dropdown").removeClass("active");
-                $(this)
-                    .next(".sidebar-submenu")
-                    .slideDown(200);
-                $(this)
-                    .parent()
-                    .addClass("active");
-            }
-        });
+    $(".sidebar-dropdown > a").click(function () {
+    $(".sidebar-submenu").slideUp(200);
+    if (
+    $(this)
+    .parent()
+    .hasClass("active")
+    ) {
+    $(".sidebar-dropdown").removeClass("active");
+    $(this)
+    .parent()
+    .removeClass("active");
+    } else {
+    $(".sidebar-dropdown").removeClass("active");
+    $(this)
+    .next(".sidebar-submenu")
+    .slideDown(200);
+    $(this)
+    .parent()
+    .addClass("active");
+    }
+    });
 
-        $("#close-sidebar").click(function () {
-            $(".page-wrapper").removeClass("toggled");
-        });
-        $("#show-sidebar").click(function () {
-            $(".page-wrapper").addClass("toggled");
-        });
+    $("#close-sidebar").click(function () {
+    $(".page-wrapper").removeClass("toggled");
+    });
+    $("#show-sidebar").click(function () {
+    $(".page-wrapper").addClass("toggled");
+    });
 
 
     });
-</script>
+    </script>
 
-</body>
+    </body>
 
-</html>
+    </html>

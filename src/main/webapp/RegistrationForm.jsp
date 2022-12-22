@@ -57,7 +57,7 @@
                                     <select class="select" name="authority" required>
                                         <option value="Student">Student</option>
                                         <option value="Teacher">Teacher</option>
-                                        <option value="Employee">Employee</option>
+
                                     </select>
                                 </div>
 

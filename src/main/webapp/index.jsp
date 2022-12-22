@@ -25,8 +25,8 @@
     </ul>
     <div class="rightNav">
 
-    <a href="RegistrationForm.jsp">sing up</a><br>
-    <a href="LogInPage.jsp">sing in</a>
+        <a href="RegistrationForm.jsp" style="color: white">sing up</a><br>
+        <a href="LogInPage.jsp" style="color: whitesmoke">sing in</a>
 
 
     </div>
@@ -37,12 +37,11 @@
             <p class="text-big">About US</p>
 
             <p class="text-small">
-                Here you will get to know the result of ABC school students.
-            </p>
+                Here you can know the results of ABC school students. </p>
             <br>
             <p class="center"><a href="#Order"
                                  style="text-decoration:none;color:white;">
-                Every student can show his marks for each subject  of the exam.</a>
+                Every student can show his marks for each subject of the exam.</a>
             </p>
         </div>
     </div>

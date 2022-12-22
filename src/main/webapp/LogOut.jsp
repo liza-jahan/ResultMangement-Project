@@ -9,10 +9,13 @@
 <html>
 <head>
     <title>Log Out</title>
+    <link rel="stylesheet" href="<%=request.getContextPath()%>/CSS/LogOut.css">
+
 </head>
 <body>
 <form action="LogOutProcess" method="post">
-    <input type="submit" value="Logout">
+    <h3><font class="row">You are successfully logged out</font></h3>
+    <a href="index.jsp" class="opo">Go-Back To Home Page</a>
 </form>
-  </body>
+</body>
 </html>

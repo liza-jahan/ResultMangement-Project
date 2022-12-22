@@ -675,9 +675,9 @@
                         </a>
                     </li>
                     <li>
-                        <a href="#">
+                        <a href="LogOut.jsp">
                             <i class="fa fa-folder"></i>
-                            <span>Examples</span>
+                            <span >Log Out</span>
                         </a>
                     </li>
                 </ul>

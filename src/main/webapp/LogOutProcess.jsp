@@ -16,8 +16,7 @@
 
   session.invalidate();
   %>
-  <h3><font color="#dcdcdc">You are successfully logged out</font></h3>
-  <a href="index.jsp">Go-Back To Home Page</a>
+
 
   </body>
 </html>

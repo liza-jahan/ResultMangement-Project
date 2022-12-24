@@ -1,0 +1,29 @@
+{
+    /*CREATE TABLE `information` (*/
+    /*`roll` int NOT NULL,*/
+    /*`name` varchar(45) DEFAULT NULL,*/
+    /*`bangla` int NOT NULL,*/
+    /*`english` int NOT NULL,*/
+    /*`math` int NOT NULL,*/
+    /*`science` int NOT NULL,*/
+    /*`computer` int NOT NULL,*/
+    /*`id` int NOT NULL AUTO_INCREMENT,*/
+    /*PRIMARY KEY (`id`)*/
+)
+
+}
+
+{
+
+    /*CREATE TABLE `registration_info` (*/
+    /*`userName` varchar(23) DEFAULT NULL,*/
+    /*`registrationNumber` int NOT NULL,*/
+    /*`classs` int NOT NULL,*/
+    /*`password` int NOT NULL,*/
+    /*`authority` varchar(29) DEFAULT NULL,*/
+    /*`id` int NOT NULL AUTO_INCREMENT,*/
+    /*PRIMARY KEY (`id`)*/
+)
+
+
+}
